@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3356A0BA-E299-4557-98FD-DFA653AFA86F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AutoEscola.My.MyApplication</StartupObject>
+    <RootNamespace>AutoEscola</RootNamespace>
+    <AssemblyName>AutoEscola</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AutoEscola.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AutoEscola.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CADALUNO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CADALUNO.Designer.vb">
+      <DependentUpon>CADALUNO.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CADINSTRUTOR.Designer.vb">
+      <DependentUpon>CADINSTRUTOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CADINSTRUTOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CADUSUARIO.Designer.vb">
+      <DependentUpon>CADUSUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CADUSUARIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AGENDAMENTO_TEORICAS.Designer.vb">
+      <DependentUpon>AGENDAMENTO_TEORICAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AGENDAMENTO_TEORICAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AGENDA_TEORICAS.Designer.vb">
+      <DependentUpon>AGENDA_TEORICAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AGENDA_TEORICAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AGENDAMENTO_PRATICAS.Designer.vb">
+      <DependentUpon>AGENDAMENTO_PRATICAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AGENDAMENTO_PRATICAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AGENDA_PRATICAS.Designer.vb">
+      <DependentUpon>AGENDA_PRATICAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AGENDA_PRATICAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAGAMENTO.Designer.vb">
+      <DependentUpon>PAGAMENTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAGAMENTO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pag_inicial_instrutor.Designer.vb">
+      <DependentUpon>pag_inicial_instrutor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pag_inicial_instrutor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.vb">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pag_inicial_usuario.Designer.vb">
+      <DependentUpon>pag_inicial_usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pag_inicial_usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CADALUNO.resx">
+      <DependentUpon>CADALUNO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CADINSTRUTOR.resx">
+      <DependentUpon>CADINSTRUTOR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CADUSUARIO.resx">
+      <DependentUpon>CADUSUARIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AGENDAMENTO_TEORICAS.resx">
+      <DependentUpon>AGENDAMENTO_TEORICAS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AGENDA_TEORICAS.resx">
+      <DependentUpon>AGENDA_TEORICAS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AGENDAMENTO_PRATICAS.resx">
+      <DependentUpon>AGENDAMENTO_PRATICAS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AGENDA_PRATICAS.resx">
+      <DependentUpon>AGENDA_PRATICAS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAGAMENTO.resx">
+      <DependentUpon>PAGAMENTO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pag_inicial_instrutor.resx">
+      <DependentUpon>pag_inicial_instrutor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pag_inicial_usuario.resx">
+      <DependentUpon>pag_inicial_usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fotos\foto_branco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icone\icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icone\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fundos\back_login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icone\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icone\logoMedio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icone\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icone\logoPequeno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fundos\back_login2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fundos\back_login3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icone\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icone\excluir.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
